@@ -182,27 +182,17 @@ You can also use an IDE such as Code::Blocks, Dev-C++, or VS Code with a configu
 PhoneBook_Application/
 │
 ├── 📁 Project Files/
-│   ├── defines.h
-│   ├── delay.h
-│   ├── door.h
-│   ├── door_cgram.h
-│   ├── eint1.h
-│   ├── gsm.h
-│   ├── kpm.h
-│   ├── kpm_defines.h
-│   ├── lcd.h
-│   ├── lcd_defines.h
-│   ├── otp.h
-│   ├── rtc.h
-│   ├── spi.h
-│   ├── spi_defines.h
-│   ├── spi_eeprom.h
-│   ├── spi_eeprom_defines.h
-│   ├── switch.h
-│   ├── types.h
-│   ├── uart.h
-│   ├── uart_defines.h
-│   └── user.h
+│   ├── Makefile
+│   ├── create.c
+│   ├── delete.c
+│   ├── edit.c
+│   ├── file.c
+│   ├── find.c
+│   ├── helper.c
+│   ├── main.c
+│   ├── phonebook.dat
+│   ├── phonebook.h
+│   └── print.c
 │
 └── README.md
 ```
