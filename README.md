@@ -190,7 +190,6 @@ PhoneBook_Application/
 │   ├── find.c
 │   ├── helper.c
 │   ├── main.c
-│   ├── phonebook.dat
 │   ├── phonebook.h
 │   └── print.c
 │
