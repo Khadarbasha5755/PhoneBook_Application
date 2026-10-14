@@ -47,6 +47,38 @@ Contact information is stored in a file, allowing saved data to be loaded when t
 | Linux / Windows              | Supported environments, subject to compatibility |
 | VS Code / Vim / Code::Blocks | Code editing and development                     |
 
+
+## 📋 Application Menu
+
+When the application starts, the following menu is displayed:
+
+```text
+------------------ MENU ---------------------------
+c/C : Create a new contact
+p/P : Print all contacts
+d/D : Delete contact
+f/F : Find contact
+e/E : Edit a contact
+s/S : Save the contacts to a file
+q/Q : Quit the application
+---------------------------------------------------
+Enter your choice:
+```
+
+### Menu Options
+
+* **Create Contact (`c/C`):** Add a new contact to the phonebook.
+* **Print Contacts (`p/P`):** Display all available contacts.
+* **Delete Contact (`d/D`):** Delete an existing contact.
+* **Find Contact (`f/F`):** Search for a contact using the supported search criteria.
+* **Edit Contact (`e/E`):** Modify the details of an existing contact.
+* **Save Contacts (`s/S`):** Save contact information to a file for future use.
+* **Quit Application (`q/Q`):** Exit the application.
+
+**Note:** Both uppercase and lowercase characters are accepted for menu choices.
+
+
+
 ## ⚙️ How the System Works
 
 The application follows a menu-driven execution flow.
@@ -59,48 +91,6 @@ The application follows a menu-driven execution flow.
 6. **Save Changes:** Updated contact information is saved according to the application's file-handling logic.
 7. **Repeat or Exit:** The user can perform additional operations or exit the application.
 
-### System Workflow
-
-```text
-             START
-               |
-               v
-      Initialize Application
-               |
-               v
-       Load Saved Contacts
-               |
-               v
-         Display Menu
-               |
-               v
-      Select an Operation
-               |
-      +--------+--------+
-      |        |        |
-      v        v        v
-    Create   Search    Display
-      |        |        |
-      +--------+--------+
-               |
-       +-------+-------+
-       |               |
-       v               v
-      Edit            Delete
-       |               |
-       +-------+-------+
-               |
-               v
-        Save Contact Data
-               |
-               v
-        Display Menu Again
-               |
-               v
-          Exit Program
-```
-
-*Note: The actual saving behavior depends on how the project implements its file-handling functions.*
 
 ## 💻 C Programming Concepts Demonstrated
 
