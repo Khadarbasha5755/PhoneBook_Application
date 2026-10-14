@@ -72,7 +72,7 @@ void edit_contact(Contact *head)
     if (answer == 'Y' || answer == 'y')
     {
         char new_name[MAX_NAME];
-
+name:
         printf("Enter new name: ");
         read_line(new_name, MAX_NAME);
 
@@ -80,6 +80,8 @@ void edit_contact(Contact *head)
             strcmp(contact->name, new_name) != 0)
         {
             printf("Another contact already has this name.\n");
+	    printf("Try again with another name.\n");
+            goto name;
         }
         else if (strlen(new_name) > 0)
         {
